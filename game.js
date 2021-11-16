@@ -1,5 +1,4 @@
-var buttonColours = ["red", "blue", "green", "yellow"];
-
+var buttonColours = ["pink", "blue", "green", "yellow", "purple", "red"];
 var gamePattern = [];
 var userClickedPattern = [];
 
@@ -42,10 +41,10 @@ function nextSequence() {
     //5. Inside nextSequence(), update the h1 with this change in the value of level.
     $("#level-title").text("Level " + level);
 
-    var randomNumber = Math.floor(Math.random() * 4);
+    var randomNumber = Math.floor(Math.random() * 6);
     var randomChosenColour = buttonColours[randomNumber];
     gamePattern.push(randomChosenColour);
-    //console.log(gamePattern);
+    console.log(gamePattern);
 
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColour);

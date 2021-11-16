@@ -27,8 +27,8 @@ footer {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -52,6 +52,14 @@ footer {
 
 .yellow {
   background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
 }
 
 .pressed {
